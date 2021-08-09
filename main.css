@@ -1,5 +1,26 @@
-body{
-    padding-block-start: 0%;
-    background-color: red;
-    
+body {
+	background-color: rgba(224, 207, 207, 0.281);
 }
+
+div {
+	background-color: red;
+}
+
+p {
+	/* background-color: green; */
+	font-size: 13px;
+}
+#fullName {
+	color: hotpink;
+}
+
+#bye {
+	color: green;
+}
+
+/* ctrl + / -> comment */
+
+/*
+	min 6 months -> OK 
+	
+*/
