@@ -1,16 +1,12 @@
-var input = document.getElementById("name").value;
-console.log(input);
-
-function showMessage() {
-	var name = "hello";
-	var age = 20;
-	console.log(name + age);
-	alert("hello");
+function on() {
+	document.getElementById("img").src = "img/pic_bulbon.gif"
 }
 
-console.log("Hello2");
-
-
-function showName() {
-	console.log("Reza");
+function off() {
+	document.getElementById("img").src = "img/pic_bulboff.gif";
 }
+
+function onError() {
+	document.getElementById("img").src = "img/no-image.jpg";
+}
+
