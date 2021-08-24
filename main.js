@@ -1,36 +1,28 @@
-let age = 10;
-let fullName = "ali"
-let isOk = true;
-let name2 = new String("ali")
+let student = {
+	firstName: "ali",
+	lastName: "asadi",
+	Id: "10221",
+	getFullName: function () {
+		return `${this.firstName}/${this.lastName}`
+	}
+}
 
-// console.log(typeof age)
-// console.log(typeof name2)
+let fullName = student.getFullName();
 
-// console.log(name2 instanceof String)
+console.log(student.firstName);// ali
 
-Number
-String
-Boolean
-Object
 
-var user = {
-	firstName: "reza",
-	age: 100,
-	nationaID: "23232323"
-};
+var teacher = function (_firstName, _lastName) {
+	let firstName = _firstName;
+	let lastName = _lastName;
+	this.getFullName = function () {
+		return `${firstName}/${lastName}`;
+	}
+}
 
-console.log(user.age);
-console.log(user.firstName);
-console.log(typeof user);
-/*
-64 32 8 4 2 1
-0   0 0 1 1 0
-0   0 0 1 0 1
-0   0 0 1 1 1
-*/
+var teacherObj = new teacher("ali", "asadi");//erro
 
-const cars = ["Saab", "Volvo", "BMW"]; //Array
+console.log(teacherObj.firstName);//
 
-console.log(cars[0])
-console.log(cars[2])
-console.log(cars[3])
+console.log(teacherObj.getFullName());
+
